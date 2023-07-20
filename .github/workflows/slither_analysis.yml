@@ -35,7 +35,7 @@ jobs:
           solc-select use 0.8.15
 
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
 #      - name: Initialize hardhat
 #        run: npx hardhat compile
