@@ -29,8 +29,10 @@ jobs:
       - name: Install Slither
         run: pip3 install slither-analyzer
 
-      - name: set VERSION
-        run: solc-select use 0.8.15
+      - name: set solidity version
+        run: |
+          solc-select install 0.8.15
+          solc-select use 0.8.15
 
       - name: Install dependencies
         run: yarn install
