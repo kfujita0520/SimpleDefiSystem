@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Initialize hardhat
+        run: npx hardhat compile
+
       - name: Test with Slither
         #run: yarn run test:slither
         run: slither .
