@@ -43,4 +43,3 @@ jobs:
       - name: Test with Slither
         #run: yarn run test:slither
         run: slither .
-        working-directory: ./contracts
