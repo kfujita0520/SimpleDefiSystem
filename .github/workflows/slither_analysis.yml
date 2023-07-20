@@ -30,7 +30,7 @@ jobs:
         run: pip3 install slither-analyzer
 
       - name: set VERSION
-        run: solc-select use VERSION
+        run: solc-select use 0.8.15
 
       - name: Install dependencies
         run: yarn install
